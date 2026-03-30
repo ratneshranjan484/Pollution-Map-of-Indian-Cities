@@ -1,0 +1,16 @@
+City,PM2.5,Latitude,Longitude,State,Population_Millions
+Delhi,310,28.61,77.20,Delhi,32
+Mumbai,98,19.07,72.87,Maharashtra,20
+Chennai,45,13.08,80.27,Tamil Nadu,10
+Kolkata,112,22.57,88.36,West Bengal,14
+Bangalore,68,12.97,77.59,Karnataka,12
+Hyderabad,72,17.38,78.48,Telangana,10
+Ahmedabad,95,23.02,72.57,Gujarat,8
+Pune,85,18.52,73.85,Maharashtra,7
+Jaipur,110,26.91,75.78,Rajasthan,6
+Lucknow,140,26.84,80.94,Uttar Pradesh,5
+Patna,180,25.59,85.13,Bihar,4
+Bhopal,88,23.25,77.41,Madhya Pradesh,3
+Chandigarh,55,30.73,76.78,Punjab,2
+Guwahati,65,26.14,91.73,Assam,3
+Bhubaneswar,58,20.29,85.82,Odisha,2

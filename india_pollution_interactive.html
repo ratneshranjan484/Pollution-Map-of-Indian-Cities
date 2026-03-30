@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8de025c80500aae01e0d9e7d10520d14 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8de025c80500aae01e0d9e7d10520d14" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8de025c80500aae01e0d9e7d10520d14 = L.map(
+                "map_8de025c80500aae01e0d9e7d10520d14",
+                {
+                    center: [22.5, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_856814657befdd5ef9c5acbe365232d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_856814657befdd5ef9c5acbe365232d4.addTo(map_8de025c80500aae01e0d9e7d10520d14);
+        
+    
+            var marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_b55b008b2e8e6ff392b237cb0caebcc4 = L.circleMarker(
+                [28.61, 77.2],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_cfaf41cf61fd34140da90bebca00b151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fe5b7fc558bc5c68dea093433f09d56 = $(`<div id="html_1fe5b7fc558bc5c68dea093433f09d56" style="width: 100.0%; height: 100.0%;">     <b>Delhi</b><br>     PM2.5: 310 μg/m³<br>     Category: Hazardous<br>     State: Delhi     </div>`)[0];
+                popup_cfaf41cf61fd34140da90bebca00b151.setContent(html_1fe5b7fc558bc5c68dea093433f09d56);
+            
+        
+
+        circle_marker_b55b008b2e8e6ff392b237cb0caebcc4.bindPopup(popup_cfaf41cf61fd34140da90bebca00b151)
+        ;
+
+        
+    
+    
+            var circle_marker_4ba919597d28da13871566d0ca720077 = L.circleMarker(
+                [19.07, 72.87],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_931d6d119bc6066aaae6dbac1bb3c18c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbbd4402a4e37e3b5bdd6d770ec7b110 = $(`<div id="html_fbbd4402a4e37e3b5bdd6d770ec7b110" style="width: 100.0%; height: 100.0%;">     <b>Mumbai</b><br>     PM2.5: 98 μg/m³<br>     Category: Moderate<br>     State: Maharashtra     </div>`)[0];
+                popup_931d6d119bc6066aaae6dbac1bb3c18c.setContent(html_fbbd4402a4e37e3b5bdd6d770ec7b110);
+            
+        
+
+        circle_marker_4ba919597d28da13871566d0ca720077.bindPopup(popup_931d6d119bc6066aaae6dbac1bb3c18c)
+        ;
+
+        
+    
+    
+            var circle_marker_e9cf659c4eb441e0ff61c5861c8481c0 = L.circleMarker(
+                [13.08, 80.27],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_e969dfd99b79bec2f9e45c2a49dfb1b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5aef1799fe3b95cf2bde92006aa75db6 = $(`<div id="html_5aef1799fe3b95cf2bde92006aa75db6" style="width: 100.0%; height: 100.0%;">     <b>Chennai</b><br>     PM2.5: 45 μg/m³<br>     Category: Good<br>     State: Tamil Nadu     </div>`)[0];
+                popup_e969dfd99b79bec2f9e45c2a49dfb1b4.setContent(html_5aef1799fe3b95cf2bde92006aa75db6);
+            
+        
+
+        circle_marker_e9cf659c4eb441e0ff61c5861c8481c0.bindPopup(popup_e969dfd99b79bec2f9e45c2a49dfb1b4)
+        ;
+
+        
+    
+    
+            var circle_marker_6ca9b1040fad9ac49d971c7ce43bc417 = L.circleMarker(
+                [22.57, 88.36],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_110865d99bdd315ea7bc822b163cd78b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba50a95e2de55f720217a0695268d350 = $(`<div id="html_ba50a95e2de55f720217a0695268d350" style="width: 100.0%; height: 100.0%;">     <b>Kolkata</b><br>     PM2.5: 112 μg/m³<br>     Category: Unhealthy for Sensitive Groups<br>     State: West Bengal     </div>`)[0];
+                popup_110865d99bdd315ea7bc822b163cd78b.setContent(html_ba50a95e2de55f720217a0695268d350);
+            
+        
+
+        circle_marker_6ca9b1040fad9ac49d971c7ce43bc417.bindPopup(popup_110865d99bdd315ea7bc822b163cd78b)
+        ;
+
+        
+    
+    
+            var circle_marker_cb918c3f9026caf4186c02f94f34ba89 = L.circleMarker(
+                [12.97, 77.59],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_41f544674d107011a2ee74284f0d5b59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c2806e8eb051c36fa8d92f51678ce29 = $(`<div id="html_2c2806e8eb051c36fa8d92f51678ce29" style="width: 100.0%; height: 100.0%;">     <b>Bangalore</b><br>     PM2.5: 68 μg/m³<br>     Category: Moderate<br>     State: Karnataka     </div>`)[0];
+                popup_41f544674d107011a2ee74284f0d5b59.setContent(html_2c2806e8eb051c36fa8d92f51678ce29);
+            
+        
+
+        circle_marker_cb918c3f9026caf4186c02f94f34ba89.bindPopup(popup_41f544674d107011a2ee74284f0d5b59)
+        ;
+
+        
+    
+    
+            var circle_marker_376d46db9d7d7b80396f7b5363542716 = L.circleMarker(
+                [17.38, 78.48],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_0994679d02241a9e47a9f3295da77b0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b488850b18ca517767be6ac10f97386f = $(`<div id="html_b488850b18ca517767be6ac10f97386f" style="width: 100.0%; height: 100.0%;">     <b>Hyderabad</b><br>     PM2.5: 72 μg/m³<br>     Category: Moderate<br>     State: Telangana     </div>`)[0];
+                popup_0994679d02241a9e47a9f3295da77b0c.setContent(html_b488850b18ca517767be6ac10f97386f);
+            
+        
+
+        circle_marker_376d46db9d7d7b80396f7b5363542716.bindPopup(popup_0994679d02241a9e47a9f3295da77b0c)
+        ;
+
+        
+    
+    
+            var circle_marker_e44561cf959f3ec308cd0810853bd589 = L.circleMarker(
+                [23.02, 72.57],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_ac10993260013bc8c5bec963d4cbacd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a069095cb85598ff7b925e9f9da15c43 = $(`<div id="html_a069095cb85598ff7b925e9f9da15c43" style="width: 100.0%; height: 100.0%;">     <b>Ahmedabad</b><br>     PM2.5: 95 μg/m³<br>     Category: Moderate<br>     State: Gujarat     </div>`)[0];
+                popup_ac10993260013bc8c5bec963d4cbacd9.setContent(html_a069095cb85598ff7b925e9f9da15c43);
+            
+        
+
+        circle_marker_e44561cf959f3ec308cd0810853bd589.bindPopup(popup_ac10993260013bc8c5bec963d4cbacd9)
+        ;
+
+        
+    
+    
+            var circle_marker_97e027294ca8f33481b545557805a049 = L.circleMarker(
+                [18.52, 73.85],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_b6340fcff490561a864d707c8fd90c94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_041a860b5b9f0ea721f5e5b08ef9e8c8 = $(`<div id="html_041a860b5b9f0ea721f5e5b08ef9e8c8" style="width: 100.0%; height: 100.0%;">     <b>Pune</b><br>     PM2.5: 85 μg/m³<br>     Category: Moderate<br>     State: Maharashtra     </div>`)[0];
+                popup_b6340fcff490561a864d707c8fd90c94.setContent(html_041a860b5b9f0ea721f5e5b08ef9e8c8);
+            
+        
+
+        circle_marker_97e027294ca8f33481b545557805a049.bindPopup(popup_b6340fcff490561a864d707c8fd90c94)
+        ;
+
+        
+    
+    
+            var circle_marker_adf4037ea85afd1e46ec0ea3202bdb04 = L.circleMarker(
+                [26.91, 75.78],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_d43d1741978cceff01c4a308f9bdacdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e041282134fe9a7da318cd7de1f82712 = $(`<div id="html_e041282134fe9a7da318cd7de1f82712" style="width: 100.0%; height: 100.0%;">     <b>Jaipur</b><br>     PM2.5: 110 μg/m³<br>     Category: Unhealthy for Sensitive Groups<br>     State: Rajasthan     </div>`)[0];
+                popup_d43d1741978cceff01c4a308f9bdacdd.setContent(html_e041282134fe9a7da318cd7de1f82712);
+            
+        
+
+        circle_marker_adf4037ea85afd1e46ec0ea3202bdb04.bindPopup(popup_d43d1741978cceff01c4a308f9bdacdd)
+        ;
+
+        
+    
+    
+            var circle_marker_eead965c6e99ee5c281a27bf3ef5074a = L.circleMarker(
+                [26.84, 80.94],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_f0e5579d434f739fcf16df2e41891a9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4971c6c529a782d9af9098e926780a0 = $(`<div id="html_e4971c6c529a782d9af9098e926780a0" style="width: 100.0%; height: 100.0%;">     <b>Lucknow</b><br>     PM2.5: 140 μg/m³<br>     Category: Unhealthy for Sensitive Groups<br>     State: Uttar Pradesh     </div>`)[0];
+                popup_f0e5579d434f739fcf16df2e41891a9a.setContent(html_e4971c6c529a782d9af9098e926780a0);
+            
+        
+
+        circle_marker_eead965c6e99ee5c281a27bf3ef5074a.bindPopup(popup_f0e5579d434f739fcf16df2e41891a9a)
+        ;
+
+        
+    
+    
+            var circle_marker_cae90568aa3a9ec440312b001e5a4d45 = L.circleMarker(
+                [25.59, 85.13],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_56a8386a90a668da985e2fa1183c501f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_538592f0b2bde8fd698770c318346d2e = $(`<div id="html_538592f0b2bde8fd698770c318346d2e" style="width: 100.0%; height: 100.0%;">     <b>Patna</b><br>     PM2.5: 180 μg/m³<br>     Category: Unhealthy<br>     State: Bihar     </div>`)[0];
+                popup_56a8386a90a668da985e2fa1183c501f.setContent(html_538592f0b2bde8fd698770c318346d2e);
+            
+        
+
+        circle_marker_cae90568aa3a9ec440312b001e5a4d45.bindPopup(popup_56a8386a90a668da985e2fa1183c501f)
+        ;
+
+        
+    
+    
+            var circle_marker_ee4ef65024fb6d84bf4395ed43d4763f = L.circleMarker(
+                [23.25, 77.41],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_2663f676559193a8a00e6e8141e9c702 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4a7c9804af1ab7856a3df110c8d8c53 = $(`<div id="html_f4a7c9804af1ab7856a3df110c8d8c53" style="width: 100.0%; height: 100.0%;">     <b>Bhopal</b><br>     PM2.5: 88 μg/m³<br>     Category: Moderate<br>     State: Madhya Pradesh     </div>`)[0];
+                popup_2663f676559193a8a00e6e8141e9c702.setContent(html_f4a7c9804af1ab7856a3df110c8d8c53);
+            
+        
+
+        circle_marker_ee4ef65024fb6d84bf4395ed43d4763f.bindPopup(popup_2663f676559193a8a00e6e8141e9c702)
+        ;
+
+        
+    
+    
+            var circle_marker_77b290f616e635ed032ccc1699e8805f = L.circleMarker(
+                [30.73, 76.78],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_fcc285dc1e7c0941ff16bd7ed7b31627 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83d73a7f3e1f63ac66e406845722b579 = $(`<div id="html_83d73a7f3e1f63ac66e406845722b579" style="width: 100.0%; height: 100.0%;">     <b>Chandigarh</b><br>     PM2.5: 55 μg/m³<br>     Category: Moderate<br>     State: Punjab     </div>`)[0];
+                popup_fcc285dc1e7c0941ff16bd7ed7b31627.setContent(html_83d73a7f3e1f63ac66e406845722b579);
+            
+        
+
+        circle_marker_77b290f616e635ed032ccc1699e8805f.bindPopup(popup_fcc285dc1e7c0941ff16bd7ed7b31627)
+        ;
+
+        
+    
+    
+            var circle_marker_6df3918a020fae5efafa47a38f3df87d = L.circleMarker(
+                [26.14, 91.73],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_0452a2a953107a4835366879cfc72457 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_286ae4a570b9ae21d08c2c057eebaa96 = $(`<div id="html_286ae4a570b9ae21d08c2c057eebaa96" style="width: 100.0%; height: 100.0%;">     <b>Guwahati</b><br>     PM2.5: 65 μg/m³<br>     Category: Moderate<br>     State: Assam     </div>`)[0];
+                popup_0452a2a953107a4835366879cfc72457.setContent(html_286ae4a570b9ae21d08c2c057eebaa96);
+            
+        
+
+        circle_marker_6df3918a020fae5efafa47a38f3df87d.bindPopup(popup_0452a2a953107a4835366879cfc72457)
+        ;
+
+        
+    
+    
+            var circle_marker_a78d1a39a553a6a2d2bea9532324f3ba = L.circleMarker(
+                [20.29, 85.82],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6);
+        
+    
+        var popup_6e5bbabd1986acd2a28f7e9c566cde56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d18e34b64f10ffb33e6d954c571dc83 = $(`<div id="html_8d18e34b64f10ffb33e6d954c571dc83" style="width: 100.0%; height: 100.0%;">     <b>Bhubaneswar</b><br>     PM2.5: 58 μg/m³<br>     Category: Moderate<br>     State: Odisha     </div>`)[0];
+                popup_6e5bbabd1986acd2a28f7e9c566cde56.setContent(html_8d18e34b64f10ffb33e6d954c571dc83);
+            
+        
+
+        circle_marker_a78d1a39a553a6a2d2bea9532324f3ba.bindPopup(popup_6e5bbabd1986acd2a28f7e9c566cde56)
+        ;
+
+        
+    
+    
+            marker_cluster_1d2fce9f36fee245ca3ae5c567ac95e6.addTo(map_8de025c80500aae01e0d9e7d10520d14);
+        
+</script>
+</html>
